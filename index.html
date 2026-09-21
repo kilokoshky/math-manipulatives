@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Manipulatives</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Math Manipulatives</h1>
+	<div id="operation-options">
+	<label>
+		<input type="checkbox" id="addition" checked>
+		Addition
+	</label>
+	<label>
+		<input type="checkbox" id="subtraction">
+		Subtraction
+	</label>
+	<label>
+		<input type="checkbox" id="multiplication">
+		Multiplication
+	</label>
+	<label>
+		<input type="checkbox" id="division">
+		Division
+	</label>
+	</div>
+	<div id="equation-area">
+    		<h2 id="equation">5 + 3 =</h2>		
+	</div>
+	<div id="work-area">
+		<p>Drag your manipulatives here.</p>
+	</div>
+	<div id="manipulatives">
+		<div class="manipulative-source" draggable="true" data-type="apple">
+			🍎</div>
+		<div class="manipulative-source" draggable="true" data-type="star">
+			⭐</div>
+	</div>
+	<button id="next-button"></button>
+<script src="script.js"></script>
+</body>
+</html>

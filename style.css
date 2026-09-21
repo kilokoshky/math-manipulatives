@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Schoolbell', cursive;
+    text-align: center;
+    margin: 0;
+    background-color: #9cc97f;
+    background-image:
+    repeating-linear-gradient(
+        90deg,
+        #b2dd9e 0px,
+        #b2dd9e 1px,
+        transparent 1px,
+        transparent 20px,
+        #c3b091 20px,
+        #c3b091 21px,
+        transparent 21px,
+        transparent 40px
+    ),
+    repeating-linear-gradient(
+        0deg,
+        #b2dd9e 0px,
+        #b2dd9e 1px,
+        transparent 1px,
+        transparent 20px,
+        #c3b091 20px,
+        #c3b091 21px,
+        transparent 21px,
+        transparent 40px
+    );
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 15px 0 5px 0;
+}
+
+#equation-area {
+    margin: 10px 0;
+}
+
+#equation {
+    display: inline-block;
+    font-size: 32px;
+    margin: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+#answer {
+    font-size: 24px;
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#work-area {
+    width: 80%;
+    height: 40vh;
+    margin: 10px auto;
+    background-color: white;
+    border: 3px solid #47b5a8;
+    position: relative;
+    padding: 15px;
+}
+
+#manipulatives {
+    width: 80%;
+    height: 15vh;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #b2dd9e;
+    border: 3px solid #6b515e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.manipulative,
+.manipulative-source {
+    font-size: 40px;
+    cursor: grab;
+    user-select: none;
+}
+
+input {
+    font-size: 18px;
+    width: 80px;
+}
+
+#operation-options {
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    text-align: left;
+}
+
+#operation-options h3 {
+    margin: 0 0 10px 0;
+}
+
+#operation-options label {
+    display: block;
+    margin: 8px 0;
+    white-space: nowrap;
+}
+
+#operation-options input {
+    margin: 0 0 0 -2px;
+    width: 14px;
+    height: 14px;
+}
+
+
+/* CHECK BUTTON */
+
+#check-button {
+    display: inline-block;
+
+    background-image: url("./Button PNGs/check-normal.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: none;
+    background-color: transparent;
+
+    width: 120px;
+    height: 50px;
+
+    padding: 0;
+    margin: 5px;
+
+    cursor: pointer;
+
+    /* The words are already part of the PNG */
+    font-size: 0;
+}
+
+#check-button:active {
+    background-image: url("./Button PNGs/check-clicked.png");
+}
+
+
+/* NEXT BUTTON */
+
+#next-button {
+    display: inline-block;
+
+    background-image: url("./Button PNGs/next-normal.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: none;
+    background-color: transparent;
+
+    width: 120px;
+    height: 50px;
+
+    padding: 0;
+    margin: 5px;
+
+    cursor: pointer;
+
+    /* The words are already part of the PNG */
+    font-size: 0;
+}
+
+#next-button:active {
+    background-image: url("./Button PNGs/next-clicked.png");
+}
+```
